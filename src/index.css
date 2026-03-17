@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base Styles ───────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body antialiased;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-100 dark:bg-navy-950;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-blue-300 dark:bg-blue-800 rounded-full transition-colors;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-blue-500;
+  }
+}
+
+/* ── Components ───────────────────────────── */
+@layer components {
+
+  /* Section Animation */
+  .section-animate {
+    @apply opacity-0 translate-y-6 transition-all duration-700 ease-out;
+  }
+
+  .section-animate.visible {
+    @apply opacity-100 translate-y-0;
+  }
+
+  /* Skill Bar */
+  .skill-fill {
+    @apply h-full rounded-full bg-gradient-to-r
+           from-blue-700 to-blue-400
+           transition-all duration-[1400ms] ease-out;
+  }
+
+  /* Project Card Hover Line */
+  .project-card {
+    @apply relative;
+  }
+
+  .project-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(to right, #1d4ed8, #60a5fa);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+  .project-card:hover::before {
+    transform: scaleX(1);
+  }
+}
+
+/* ── Utilities ───────────────────────────── */
+@layer utilities {
+  .cursor-blink {
+    display: inline-block;
+    width: 2px;
+    height: 1.1em;
+    margin-left: 3px;
+    animation: blink 1s step-end infinite;
+  }
+}
+
+/* ── Animations ───────────────────────────── */
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
