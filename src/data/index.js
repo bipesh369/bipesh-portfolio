@@ -14,7 +14,7 @@ export const NAV_LINKS = [
 
 // ─── Hero ────────────────────────────────────────────────────
 export const TYPEWRITER_ROLES = [
-  "Frontend Engineer",
+  "Frontend Developer",
   "React.js Specialist",
 ];
 
@@ -27,7 +27,7 @@ export const HERO_STATS = [
 // ─── About ───────────────────────────────────────────────────
 export const ABOUT_INFO = [
   { key: "Name",       value: "Bipesh Junior Tharu"},
-  { key: "Role",       value: "Frontend Engineer"},
+  { key: "Role",       value: "Frontend Developer"},
   { key: "Location",   value: "Nepalgunj, Nepal"},
   { key: "Email",      value: "juniorbipesh@gmail.com"},
   { key: "Status",     value: "Available for work ✓" },
@@ -36,7 +36,7 @@ export const ABOUT_INFO = [
 export const EXPERIENCE = [
   {
     year:    "2025 – Present",
-    role:    "Frontend Engineer",
+    role:    "Frontend Developer",
     company: "Karnali Creative",
     desc:    "Building scalable React apps with TypeScript, Redux, and real-time features.",
   },

@@ -66,7 +66,7 @@ export default function HeroSection({ onNavClick }) {
           </p>
 
           <p className="text-sm leading-[1.9] text-slate-500 dark:text-slate-400 max-w-[480px] mb-9">
-            Passionate frontend engineer crafting high-performance, accessible web
+            Passionate frontend developer crafting high-performance, accessible web
             applications with clean code, modern architecture, and pixel-perfect
             interfaces that delight users.
           </p>
@@ -132,14 +132,6 @@ export default function HeroSection({ onNavClick }) {
         <div className="flex justify-center lg:justify-end">
           <ProfilePhoto className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96" />
         </div>
-      </div>
-
-      {/* Scroll */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 opacity-40">
-        <span className="font-mono text-[0.6rem] tracking-[2px] uppercase text-slate-400">
-          Scroll
-        </span>
-        <div className="w-[1px] h-8 bg-gradient-to-b from-blue-400 to-transparent" />
       </div>
     </section>
   );

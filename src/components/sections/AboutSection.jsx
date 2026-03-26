@@ -26,7 +26,7 @@ export default function AboutSection() {
               <strong className="text-slate-700 dark:text-blue-300 font-semibold">
                 Bipesh Junior
               </strong>
-              , a frontend engineer based in Nepalgunj, Nepal. I love turning
+              , a frontend developer based in Nepalgunj, Nepal. I love turning
               complex problems into elegant, high-performing digital products.
             </p>
 

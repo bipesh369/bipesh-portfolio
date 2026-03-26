@@ -13,7 +13,7 @@ export default function Navbar({ activeSection, onNavClick }) {
 
   return (
     <header className="fixed top-0 left-0 w-full z-[100] bg-navy-950/90 backdrop-blur-md border-b border-white/[0.15]">
-      <div className="max-w-6xl mx-auto flex items-center justify-between px-6 h-[70px]">
+      <div className="max-w-6xl mx-auto flex items-center justify-between px-6 h-[78px]">
 
         {/* Logo */}
         <div className="font-display text-3xl font-extrabold text-blue-500">
