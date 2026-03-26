@@ -61,7 +61,7 @@ export default function AboutSection() {
           {/* Right Side */}
           <div>
             <p className="font-mono text-base tracking-[3px] uppercase text-blue-600 dark:text-blue-400 mb-6">
-              // Experience
+               {'// Experience'}
             </p>
 
             <div className="flex flex-col">

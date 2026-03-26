@@ -69,7 +69,7 @@ export default function SkillsSection() {
         <p className="font-mono text-[0.62rem] tracking-[3px] uppercase
           text-slate-400 dark:text-slate-500 mb-4"
         >
-          // Also proficient in
+          {'// Also proficient in'}
         </p>
 
         <div className="flex flex-wrap gap-2">

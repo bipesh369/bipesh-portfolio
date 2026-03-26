@@ -43,7 +43,7 @@ export default function HeroSection({ onNavClick }) {
         {/* Left */}
         <div>
           <p className="font-mono text-xs tracking-[5px] uppercase text-slate-400 dark:text-slate-500 mb-4">
-            // Hello World 👋
+            {'// Hello World 👋'}
           </p>
 
           <h1
