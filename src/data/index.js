@@ -64,7 +64,7 @@ export const PROJECTS = [
     title: "ManMaya Hospitality",
     desc:  "Comprehensive tour package and hospitality management system for smooth trip planning.",
     tags:  ["React.js", "TypeScript", "Tailwind CSS", "Axios/Fetch API", "React Router", "Node.js", "Express.js", "MongoDB"],
-    demo:  "#",
+    demo:  "https://manmayahospitality.com",
     code:  "#",
   },
   {
@@ -90,7 +90,7 @@ export const CONTACT_ITEMS = [
   { icon: FaMapMarkerAlt, label: "Location", value: "Nepalgunj, Nepal" },
   { icon: FaEnvelope, label: "Email", value: "juniorbipesh@gmail.com" },
   { icon: FaPhone, label: "Phone", value: "+977 9763852173" },
-  { icon: FaGlobe, label: "Website", value: "bipeshjunior.dev" },
+  { icon: FaGlobe, label: "Website", value: "bipeshjunior.vercel.app" },
 ];
 
 // ─── Social ──────────────────────────────────────────────────
