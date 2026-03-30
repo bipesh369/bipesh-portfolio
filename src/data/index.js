@@ -20,8 +20,8 @@ export const TYPEWRITER_ROLES = [
 
 export const HERO_STATS = [
   { num: "1+",  label: "Years Exp"  },
-  { num: "3+", label: "Projects"   },
-  { num: "2+", label: "Clients"    },
+  { num: "1+", label: "Projects"   },
+  { num: "1+", label: "Clients"    },
 ];
 
 // ─── About ───────────────────────────────────────────────────
@@ -67,22 +67,6 @@ export const PROJECTS = [
     demo:  "https://manmayahospitality.com",
     code:  "#",
   },
-  {
-    num:   "02",
-    title: "FinTrack Dashboard",
-    desc:  "Real-time personal finance tracker with interactive charts, multi-currency support, and smart budget planning.",
-    tags:  ["Next.js", "TypeScript", "Chart.js", "Tailwind"],
-    demo:  "#",
-    code:  "#",
-  },
-  {
-    num:   "03",
-    title: "ShopNest eCommerce",
-    desc:  "Scalable online marketplace with Stripe payments, inventory management, and a full-featured admin panel.",
-    tags:  ["React", "Redux", "Stripe", "Node.js"],
-    demo:  "#",
-    code:  "#",
-  },
 ];
 
 // ─── Contact ─────────────────────────────────────────────────
@@ -90,7 +74,7 @@ export const CONTACT_ITEMS = [
   { icon: FaMapMarkerAlt, label: "Location", value: "Nepalgunj, Nepal" },
   { icon: FaEnvelope, label: "Email", value: "juniorbipesh@gmail.com" },
   { icon: FaPhone, label: "Phone", value: "+977 9763852173" },
-  { icon: FaGlobe, label: "Website", value: "bipeshjunior.vercel.app" },
+  { icon: FaGlobe, label: "Website", value: "bipeshjuniortharu.com.np" },
 ];
 
 // ─── Social ──────────────────────────────────────────────────
