@@ -2,6 +2,7 @@ import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaGlobe } from "react-icons/fa";
 import { FaGithub, FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
 import { FaHtml5, FaCss3Alt, FaReact, FaJs } from "react-icons/fa";
 import { SiTailwindcss, SiTypescript, SiNextdotjs } from "react-icons/si";
+import { FaWhatsapp } from "react-icons/fa";
 
 // ─── Navigation ──────────────────────────────────────────────
 export const NAV_LINKS = [
@@ -25,13 +26,12 @@ export const HERO_STATS = [
 ];
 
 // ─── About ───────────────────────────────────────────────────
-export const ABOUT_INFO = [
-  { key: "Name",       value: "Bipesh Junior Tharu"},
-  { key: "Role",       value: "Frontend Developer"},
-  { key: "Location",   value: "Nepalgunj, Nepal"},
-  { key: "Email",      value: "juniorbipesh@gmail.com"},
-  { key: "Status",     value: "Available for work ✓" },
-];
+export const ABOUT_INFO = [ 
+  { key: "Full Name", value: "Bipesh Junior Tharu"},
+  { key: "Role", value: "Frontend Developer"}, 
+  { key: "Location", value: "Nepalgunj, Nepal"}, 
+  { key: "Email", value: "juniorbipesh@gmail.com"}, 
+  { key: "Status", value: "Available for work ✓" }, ];
 
 export const EXPERIENCE = [
   {
@@ -54,7 +54,7 @@ export const SKILLS = [
 ];
 
 export const EXTRA_TECH = [
-  "Git", "Github", "Responsive Design", "Redux", "Vite",
+  "Vite","Git", "Github", "Responsive Design", "Redux"
 ];
 
 // ─── Projects ────────────────────────────────────────────────
@@ -69,12 +69,31 @@ export const PROJECTS = [
   },
 ];
 
-// ─── Contact ─────────────────────────────────────────────────
+// ─── Contact ───────────────────────────────────────────────
 export const CONTACT_ITEMS = [
-  { icon: FaMapMarkerAlt, label: "Location", value: "Nepalgunj, Nepal" },
-  { icon: FaEnvelope, label: "Email", value: "juniorbipesh@gmail.com" },
-  { icon: FaPhone, label: "Phone", value: "+977 9763852173" },
-  { icon: FaGlobe, label: "Website", value: "bipeshjuniortharu.com.np" },
+  {
+    icon: FaMapMarkerAlt,
+    label: "Location",
+    value: "Nepalgunj, Nepal",
+  },
+  {
+    icon: FaEnvelope,
+    label: "Email",
+    value: "juniorbipesh@gmail.com",
+    link: "mailto:juniorbipesh@gmail.com",
+  },
+  {
+    icon: FaWhatsapp,
+    label: "WhatsApp",
+    value: "+977 9763852173",
+    link: "https://wa.me/9779763852173",
+  },
+  {
+    icon: FaGlobe,
+    label: "Website",
+    value: "bipeshjuniortharu.com.np",
+    link: "https://bipeshjuniortharu.com.np",
+  },
 ];
 
 // ─── Social ──────────────────────────────────────────────────
