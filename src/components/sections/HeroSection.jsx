@@ -52,7 +52,7 @@ export default function HeroSection({ onNavClick }) {
           >
             I'm{" "}
             <span className="text-blue-600 dark:text-blue-400">
-              BIPESH JUNIOR
+              BIPESH JUNIOR 
             </span>
           </h1>
 
