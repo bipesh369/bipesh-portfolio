@@ -31,7 +31,8 @@ export const ABOUT_INFO = [
   { key: "Role", value: "Frontend Developer"}, 
   { key: "Location", value: "Nepalgunj, Nepal"}, 
   { key: "Email", value: "juniorbipesh@gmail.com"}, 
-  { key: "Status", value: "Available for work ✓" }, ];
+  { key: "Status", value: "Available for work ✓" }, 
+];
 
 export const EXPERIENCE = [
   {
@@ -54,7 +55,7 @@ export const SKILLS = [
 ];
 
 export const EXTRA_TECH = [
-  "Vite","Git", "Github", "Responsive Design", "Redux"
+  "Vite","Git", "Github", "Responsive Design"
 ];
 
 // ─── Projects ────────────────────────────────────────────────
