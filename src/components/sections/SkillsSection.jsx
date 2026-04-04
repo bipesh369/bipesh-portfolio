@@ -1,5 +1,5 @@
 import useIntersect from "../../hooks/useIntersect";
-import SectionHeader from "../ui/SectionHeader";
+import SectionHeader from "../layout/SectionHeader";
 import { SKILLS, EXTRA_TECH } from "../../data";
 
 export default function SkillsSection() {
@@ -32,7 +32,8 @@ export default function SkillsSection() {
               {/* Top */}
               <div className="flex items-center justify-between mb-3">
                 <div className="flex items-center gap-2.5">
-                  <div className="w-8 h-8 rounded-lg bg-blue-50 dark:bg-blue-950/50
+                  <div
+                    className="w-8 h-8 rounded-lg bg-blue-50 dark:bg-blue-950/50
                     border border-blue-100 dark:border-blue-900
                     flex items-center justify-center flex-shrink-0"
                   >
@@ -50,7 +51,8 @@ export default function SkillsSection() {
               </div>
 
               {/* Progress */}
-              <div className="h-[5px] rounded-full bg-blue-50 dark:bg-blue-950/60
+              <div
+                className="h-[5px] rounded-full bg-blue-50 dark:bg-blue-950/60
                 border border-blue-100 dark:border-blue-900/50 overflow-hidden"
               >
                 <div
@@ -66,10 +68,11 @@ export default function SkillsSection() {
         </div>
 
         {/* Extra tech */}
-        <p className="font-mono text-[0.62rem] tracking-[3px] uppercase
+        <p
+          className="font-mono text-[0.62rem] tracking-[3px] uppercase
           text-slate-400 dark:text-slate-500 mb-4"
         >
-          {'// Also proficient in'}
+          {"// Also proficient in"}
         </p>
 
         <div className="flex flex-wrap gap-2">

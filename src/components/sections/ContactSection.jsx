@@ -1,6 +1,6 @@
 import { useState } from "react";
 import useIntersect from "../../hooks/useIntersect";
-import SectionHeader from "../ui/SectionHeader";
+import SectionHeader from "../layout/SectionHeader";
 import { CONTACT_ITEMS } from "../../data";
 
 const EMPTY = { name: "", email: "", subject: "", message: "" };
@@ -81,7 +81,6 @@ export default function ContactSection() {
         <SectionHeader eyebrow="// 04. contact" title="Get In Touch" />
 
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-10 lg:gap-16 items-start">
-
           {/* ── Left: Info Cards ── */}
           <div>
             <p className="text-sm leading-[1.9] text-slate-500 dark:text-slate-400 mb-7">
@@ -110,8 +109,10 @@ export default function ContactSection() {
                   </div>
 
                   <div>
-                    <p className="font-mono text-[0.58rem] tracking-[2px] uppercase
-                                  text-slate-400 dark:text-slate-500 mb-0.5">
+                    <p
+                      className="font-mono text-[0.58rem] tracking-[2px] uppercase
+                                  text-slate-400 dark:text-slate-500 mb-0.5"
+                    >
                       {item.label}
                     </p>
                     <p className="text-sm font-medium text-slate-700 dark:text-slate-200">
@@ -136,13 +137,12 @@ export default function ContactSection() {
                   Message Sent!
                 </h3>
                 <p className="text-sm text-slate-400 dark:text-slate-500 leading-relaxed max-w-xs">
-                  Thanks for reaching out, Bipesh will get back to you within
-                  24 hours.
+                  Thanks for reaching out, Bipesh will get back to you within 24
+                  hours.
                 </p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} noValidate>
-
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                   <div>
                     <label className="block font-mono text-[0.6rem] tracking-[2px] uppercase text-slate-400 dark:text-slate-500 mb-1.5">
@@ -244,7 +244,6 @@ export default function ContactSection() {
               </form>
             )}
           </div>
-
         </div>
       </div>
     </section>

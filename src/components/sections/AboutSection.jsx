@@ -1,5 +1,5 @@
 import useIntersect from "../../hooks/useIntersect";
-import SectionHeader from "../ui/SectionHeader";
+import SectionHeader from "../layout/SectionHeader";
 import { ABOUT_INFO, EXPERIENCE } from "../../data";
 
 export default function AboutSection() {
@@ -18,7 +18,6 @@ export default function AboutSection() {
         <SectionHeader eyebrow="// 01. about_me" title="About Me" />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-          
           {/* Left Side */}
           <div>
             <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400 mb-4">
@@ -35,8 +34,8 @@ export default function AboutSection() {
               <strong className="text-slate-700 dark:text-blue-300 font-semibold">
                 1+ years
               </strong>{" "}
-              of experience, I build modern web applications — from clean UIs
-              to scalable frontend architectures.
+              of experience, I build modern web applications — from clean UIs to
+              scalable frontend architectures.
             </p>
 
             <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400 mb-8">
@@ -61,16 +60,16 @@ export default function AboutSection() {
           {/* Right Side */}
           <div>
             <p className="font-mono text-base tracking-[3px] uppercase text-blue-600 dark:text-blue-400 mb-6">
-               {'// Experience'}
+              {"// Experience"}
             </p>
 
             <div className="flex flex-col">
               {EXPERIENCE.map((item, idx) => (
                 <div key={`${item.role}-${idx}`} className="flex gap-4">
-                  
                   {/* Timeline Indicator */}
                   <div className="flex flex-col items-center flex-shrink-0">
-                    <div className="w-5 h-5 rounded-full bg-white dark:bg-navy-800
+                    <div
+                      className="w-5 h-5 rounded-full bg-white dark:bg-navy-800
                       border-2 border-blue-500 mt-1
                       shadow-[0_0_0_4px_rgba(37,99,235,0.12)]"
                     />
@@ -97,12 +96,10 @@ export default function AboutSection() {
                       {item.desc}
                     </p>
                   </div>
-
                 </div>
               ))}
             </div>
           </div>
-
         </div>
       </div>
     </section>

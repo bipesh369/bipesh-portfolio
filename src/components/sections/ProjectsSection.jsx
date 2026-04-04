@@ -1,5 +1,5 @@
 import useIntersect from "../../hooks/useIntersect";
-import SectionHeader from "../ui/SectionHeader";
+import SectionHeader from "../layout/SectionHeader";
 import { PROJECTS } from "../../data";
 
 /**
@@ -40,19 +40,24 @@ export default function ProjectsSection() {
               `}
               style={{
                 transitionDelay: `${idx * 80}ms`,
-                transitionProperty: "opacity, transform, box-shadow, border-color",
+                transitionProperty:
+                  "opacity, transform, box-shadow, border-color",
                 transitionDuration: "500ms",
               }}
             >
               {/* Project number */}
-              <p className="font-mono text-[0.58rem] tracking-[2px] uppercase
-                            text-slate-400 dark:text-slate-600 mb-3">
+              <p
+                className="font-mono text-[0.58rem] tracking-[2px] uppercase
+                            text-slate-400 dark:text-slate-600 mb-3"
+              >
                 Project {project.num}
               </p>
 
               {/* Title */}
-              <h3 className="font-display text-lg font-bold text-slate-900
-                             dark:text-white mb-2.5">
+              <h3
+                className="font-display text-lg font-bold text-slate-900
+                             dark:text-white mb-2.5"
+              >
                 {project.title}
               </h3>
 
