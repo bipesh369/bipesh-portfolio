@@ -1,4 +1,4 @@
-import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaGlobe } from "react-icons/fa";
+import { FaMapMarkerAlt, FaEnvelope, FaGlobe } from "react-icons/fa";
 import { FaGithub, FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
 import { FaHtml5, FaCss3Alt, FaReact, FaJs } from "react-icons/fa";
 import { SiTailwindcss, SiTypescript, SiNextdotjs } from "react-icons/si";
