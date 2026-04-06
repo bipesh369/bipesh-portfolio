@@ -27,7 +27,7 @@ export const HERO_STATS = [
 
 // ─── About ───────────────────────────────────────────────────
 export const ABOUT_INFO = [ 
-  { key: "Full Name", value: "Bipesh Junior Tharu"},
+  { key: "Name", value: "Bipesh Junior Tharu"},
   { key: "Role", value: "Frontend Developer"}, 
   { key: "Location", value: "Nepalgunj, Nepal"}, 
   { key: "Email", value: "juniorbipesh@gmail.com"}, 
