@@ -79,7 +79,7 @@ export const CONTACT_ITEMS = [
   },
   {
     icon: FaEnvelope,
-    label: "Email",
+    label: "Email Me",
     value: "juniorbipesh@gmail.com",
     link: "mailto:juniorbipesh@gmail.com",
   },
@@ -91,9 +91,9 @@ export const CONTACT_ITEMS = [
   },
   {
     icon: FaGlobe,
-    label: "Website",
-    value: "bipeshjuniortharu.com.np",
-    link: "https://bipeshjuniortharu.com.np",
+    label: "Portfolio",
+    value: "bipeshjunior.com.np",
+    link: "https://bipeshjunior.com.np",
   },
 ];
 
