@@ -12,7 +12,7 @@ export default function Footer() {
       <p className="font-mono text-[0.68rem] tracking-wide text-slate-400 dark:text-slate-500 text-center md:text-left">
         Designed &amp; Built By{" "}
         <strong className="text-blue-600 dark:text-blue-500 font-mono text-[0.70rem]">
-          Bipesh Junior
+          Bipesh Junior Tharu
         </strong>
       </p>
 
