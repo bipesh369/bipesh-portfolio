@@ -25,15 +25,21 @@ export const HERO_STATS = [
   { num: "1+", label: "Clients"    },
 ];
 
-// ─── About ───────────────────────────────────────────────────
-export const ABOUT_INFO = [ 
-  { key: "Full Name", value: "Bipesh Junior Tharu"},
-  { key: "Role", value: "Frontend Developer"}, 
-  { key: "Location", value: "Nepalgunj, Nepal"}, 
-  { key: "Email", value: "juniorbipesh@gmail.com"}, 
-  { key: "Status", value: "Available for work ✓" }, 
+// ─── Eductional Info───────────────────────────────────────────────────
+export const EDUCATION = [
+  {
+    year: "2022 – Present",
+    degree: "Bachelor of Science in Computer Science and Information Technology (B.Sc. CSIT)",
+    school: "Mahendra Multiple Campus, Nepalgunj",
+  },
+  {
+    year: "2019 – 2021",
+    degree: "+2 Science",
+    school: "Holyland English Secondary School, Nepalgunj",
+  },
 ];
 
+// Experiences
 export const EXPERIENCE = [
   {
     year:    "2025 – Present",
