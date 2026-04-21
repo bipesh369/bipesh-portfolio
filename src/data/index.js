@@ -51,12 +51,12 @@ export const EXPERIENCE = [
 
 // ─── Skills ──────────────────────────────────────────────────
 export const SKILLS = [
-  { name: "HTML", icon: FaHtml5, pct: 95 },
-  { name: "CSS", icon: FaCss3Alt, pct: 95 },
-  { name: "JavaScript", icon: FaJs, pct: 95 },
-  { name: "React.js", icon: FaReact, pct: 90 },
-  { name: "Tailwind CSS", icon: SiTailwindcss, pct: 95 },
-  { name: "TypeScript", icon: SiTypescript, pct: 90 },
+  { name: "HTML", icon: FaHtml5, pct: 85 },
+  { name: "CSS", icon: FaCss3Alt, pct: 85 },
+  { name: "JavaScript", icon: FaJs, pct: 85 },
+  { name: "React.js", icon: FaReact, pct: 80 },
+  { name: "Tailwind CSS", icon: SiTailwindcss, pct: 85 },
+  { name: "TypeScript", icon: SiTypescript, pct: 80 },
   { name: "Next.js", icon: SiNextdotjs, pct: 60 },
 ];
 
