@@ -35,9 +35,10 @@ export default function ThemeToggle({ compact = false }) {
         className={`absolute top-0.5 w-6 h-6 rounded-full shadow-md
                     flex items-center justify-center text-sm
                     transition-all duration-300
-                    ${isDark
-                      ? "translate-x-7 bg-blue-400 text-navy-950"
-                      : "translate-x-0.5 bg-yellow-300 text-yellow-800"
+                    ${
+                      isDark
+                        ? "translate-x-7 bg-blue-400 text-navy-950"
+                        : "translate-x-0.5 bg-yellow-300 text-yellow-800"
                     }`}
       >
         {isDark ? "☀" : "☾"}
