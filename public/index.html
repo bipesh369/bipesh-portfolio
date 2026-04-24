@@ -1,56 +1,74 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-```
-<!-- SEO -->
-<meta name="description" content="Bipesh Junior — Frontend Engineer Portfolio" />
-<title>Bipesh | Frontend Developer</title>
+    <!-- Canonical (IMPORTANT) -->
+    <link rel="canonical" href="https://bipeshjunior.com.np/" />
 
-<!-- Favicon (shows small image in Google results) -->
-<link rel="icon" type="image/png" href="/favicon.png" />
+    <!-- SEO -->
+    <meta name="description" content="Bipesh Junior — Frontend Developer Portfolio from Nepal" />
+    <meta name="robots" content="index, follow" />
 
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
-  rel="stylesheet"
-/>
+    <title>Bipesh | Frontend Developer</title>
 
-<!-- Open Graph (important for preview + helps Google understand image) -->
-<meta property="og:title" content="Bipesh | Frontend Developer" />
-<meta property="og:description" content="Portfolio of Bipesh Junior, Frontend Developer." />
-<meta property="og:image" content="https://bipeshjunior.com.np/profile.jpg" />
-<meta property="og:url" content="https://bipeshjunior.com.np" />
-<meta property="og:type" content="website" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
 
-<!-- Structured Data (THIS is what links your photo to your identity) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Bipesh Junior",
-  "url": "https://bipeshjunior.com.np",
-  "image": "https://bipeshjunior.com.np/profile.jpg",
-  "sameAs": [
-    "https://github.com/bipesh369",
-    "https://www.linkedin.com/in/bipeshjunior"
-  ],
-  "jobTitle": "Frontend Developer",
-  "address": {
-    "@type": "Badhaiyatal-4, Bardiya, Lumbini Province",
-    "addressCountry": "Nepal"
-  }
-}
-</script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- Open Graph -->
+    <meta property="og:title" content="Bipesh Junior | Frontend Developer" />
+    <meta property="og:description" content="Portfolio of Bipesh Junior, Frontend Developer from Nepal." />
+    <meta property="og:image" content="https://bipeshjunior.com.np/profile.jpg" />
+    <meta property="og:url" content="https://bipeshjunior.com.np/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bipesh | Frontend Developer" />
+    <meta name="twitter:description" content="Portfolio of Bipesh Junior, Frontend Developer from Nepal." />
+    <meta name="twitter:image" content="https://bipeshjunior.com.np/profile.jpg" />
+
+    <!-- Structured Data (FIXED) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Bipesh Junior",
+      "url": "https://bipeshjunior.com.np/",
+      "image": "https://bipeshjunior.com.np/profile.jpg",
+      "jobTitle": "Frontend Developer",
+      "sameAs": [
+        "https://github.com/bipesh369",
+        "https://www.linkedin.com/in/bipeshjunior"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Badhaiyatal-4, Bardiya",
+        "addressRegion": "Lumbini Province",
+        "addressCountry": "Nepal"
+      }
+    }
+    </script>
   </head>
 
   <body>
+    <!-- IMPORTANT: real image must exist in DOM -->
+    <img 
+      src="/profile.jpg" 
+      alt="Bipesh Junior Frontend Developer Nepal"
+      width="300"
+      height="300"
+    />
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
