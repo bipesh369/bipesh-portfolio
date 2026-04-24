@@ -1,11 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 
-/**
- * useIntersect — triggers once when element enters viewport.
- *
- * @param {number} threshold - Visibility ratio (default 0.15)
- * @returns {[React.RefObject, boolean]} [ref, isVisible]
- */
 export default function useIntersect(threshold = 0.15) {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
@@ -13,24 +7,20 @@ export default function useIntersect(threshold = 0.15) {
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-
-    if (visible) return; // stop observing once triggered
+    if (visible) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setVisible(true);
-          observer.disconnect(); // stop observing after trigger
+          observer.disconnect();
         }
       },
-      { threshold }
+      { threshold, rootMargin: "0px 0px -10px 0px" }
     );
 
     observer.observe(el);
-
-    return () => {
-      observer.disconnect();
-    };
+    return () => observer.disconnect();
   }, [threshold, visible]);
 
   return [ref, visible];
