@@ -31,7 +31,11 @@ export default function HeroSection({ onNavClick }) {
       <div className="absolute bottom-0 left-1/3 w-[320px] h-[320px] rounded-full bg-blue-300/10 dark:bg-blue-600/8 blur-2xl pointer-events-none animate-float-slow" />
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div
+  className={`relative z-10 w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center transition-all duration-700 ${
+    visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+  }`}
+>
         
         {/* Left */}
         <div>
