@@ -27,7 +27,9 @@ export default function ProjectsSection() {
         <SectionHeader eyebrow="// 03. projects" title="Featured Work" />
 
         <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400 mt-4 mb-10">
-          Selected projects focused on building scalable, performant, and user-centered web applications with clean architecture and modern UI systems.
+          Selected projects focused on building scalable, performant, and
+          user-centered web applications with clean architecture and modern UI
+          systems.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">

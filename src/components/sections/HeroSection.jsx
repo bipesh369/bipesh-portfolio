@@ -45,9 +45,9 @@ export default function HeroSection({ onNavClick }) {
 
           <h1
             className="font-display font-extrabold leading-[1.05] mb-3 text-slate-800 dark:text-white"
-            style={{ fontSize: "clamp(2.8rem, 6vw, 4rem)" }}
+            style={{ fontSize: "clamp(2.5rem, 5vw, 3.6rem)" }}
           >
-            I'm{" "}
+            <span className="block">I'm</span>{" "}
             <span className="text-blue-600 dark:text-blue-400">
               BIPESH JUNIOR
             </span>
@@ -55,7 +55,7 @@ export default function HeroSection({ onNavClick }) {
 
           <p
             className="font-mono font-light mb-6 min-h-[2.2em] text-blue-600 dark:text-blue-300"
-            style={{ fontSize: "clamp(1.2rem, 2vw, 1.6rem)" }}
+            style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)" }}
           >
             &gt;&nbsp;{role}
             <span className="cursor-blink bg-blue-600 dark:bg-blue-400" />
@@ -63,8 +63,8 @@ export default function HeroSection({ onNavClick }) {
 
           <p className="text-sm leading-[1.9] text-slate-500 dark:text-slate-400 max-w-[480px] mb-9">
             Frontend developer focused on transforming ideas into responsive,
-            high-performance websites with clean architecture, modern animations,
-            and user-first design.
+            high-performance websites with clean architecture, modern
+            animations, and user-first design.
           </p>
 
           {/* Buttons */}

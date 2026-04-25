@@ -15,10 +15,7 @@ import ContactSection from "./components/sections/ContactSection";
 const SECTION_IDS = NAV_LINKS.map(({ id }) => id);
 
 function AppShell() {
-  const [activeSection, setActiveSection] = useActiveSection(
-    SECTION_IDS,
-    0.35
-  );
+  const [activeSection, setActiveSection] = useActiveSection(SECTION_IDS, 0.35);
 
   const scrollTo = useCallback(
     (id) => {
@@ -37,7 +34,7 @@ function AppShell() {
         });
       }
     },
-    [setActiveSection]
+    [setActiveSection],
   );
 
   return (

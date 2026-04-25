@@ -22,11 +22,10 @@ export default function Skills() {
       </div>
 
       {/* TOP LINE */}
-<div className="absolute top-0 left-8 right-8 md:left-16 md:right-16 h-px bg-gradient-to-r from-transparent via-blue-400/25 dark:via-cyan-400/25 to-transparent" />
+      <div className="absolute top-0 left-8 right-8 md:left-16 md:right-16 h-px bg-gradient-to-r from-transparent via-blue-400/25 dark:via-cyan-400/25 to-transparent" />
 
       {/* MAIN WRAPPER */}
       <div className="max-w-6xl mx-auto w-full relative z-10 flex flex-col min-h-[80vh]">
-
         {/* Header */}
         <SectionHeader eyebrow="// 02. skills" title="Tech Stack" />
 
@@ -41,7 +40,6 @@ export default function Skills() {
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-4">
           {SKILLS.map((group, gi) => (
             <div key={gi} className="flex flex-col items-center flex-1">
-
               {/* Category Header */}
               <div className="flex items-center gap-3 mb-6 w-full">
                 <div className="flex-1 h-px bg-gradient-to-r from-transparent to-blue-500/40 dark:to-cyan-400/40" />
@@ -90,14 +88,12 @@ export default function Skills() {
                   </div>
                 ))}
               </div>
-
             </div>
           ))}
         </div>
 
         {/* FOOTER */}
-       <div className="mt-auto pt-10 flex items-center justify-center w-full">
-
+        <div className="mt-auto pt-10 flex items-center justify-center w-full">
           {/* Left line */}
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-blue-400/40 dark:via-cyan-400/40 to-transparent" />
 
@@ -108,32 +104,50 @@ export default function Skills() {
 
           {/* Right line */}
           <div className="flex-1 h-px bg-gradient-to-l from-transparent via-blue-400/40 dark:via-cyan-400/40 to-transparent" />
-
         </div>
-
       </div>
 
-      
-{/* BOTTOM LINE */}
-<div className="absolute bottom-0 left-8 right-8 md:left-16 md:right-16 h-px bg-gradient-to-r from-transparent via-blue-400/25 dark:via-cyan-400/25 to-transparent" />
+      {/* BOTTOM LINE */}
+      <div className="absolute bottom-0 left-8 right-8 md:left-16 md:right-16 h-px bg-gradient-to-r from-transparent via-blue-400/25 dark:via-cyan-400/25 to-transparent" />
       {/* Animations */}
       <style jsx>{`
         @keyframes float1 {
-          0%, 100% { transform: translate(0, 0) scale(1); }
-          50% { transform: translate(60px, 40px) scale(1.1); }
+          0%,
+          100% {
+            transform: translate(0, 0) scale(1);
+          }
+          50% {
+            transform: translate(60px, 40px) scale(1.1);
+          }
         }
         @keyframes float2 {
-          0%, 100% { transform: translate(0, 0) scale(1); }
-          50% { transform: translate(-50px, -40px) scale(1.15); }
+          0%,
+          100% {
+            transform: translate(0, 0) scale(1);
+          }
+          50% {
+            transform: translate(-50px, -40px) scale(1.15);
+          }
         }
         @keyframes float3 {
-          0%, 100% { transform: translate(0, 0) scale(1); }
-          50% { transform: translate(40px, -50px) scale(1.05); }
+          0%,
+          100% {
+            transform: translate(0, 0) scale(1);
+          }
+          50% {
+            transform: translate(40px, -50px) scale(1.05);
+          }
         }
 
-        .animate-float1 { animation: float1 12s ease-in-out infinite; }
-        .animate-float2 { animation: float2 14s ease-in-out infinite; }
-        .animate-float3 { animation: float3 16s ease-in-out infinite; }
+        .animate-float1 {
+          animation: float1 12s ease-in-out infinite;
+        }
+        .animate-float2 {
+          animation: float2 14s ease-in-out infinite;
+        }
+        .animate-float3 {
+          animation: float3 16s ease-in-out infinite;
+        }
       `}</style>
     </section>
   );

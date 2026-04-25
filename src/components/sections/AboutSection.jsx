@@ -27,7 +27,6 @@ export default function AboutSection() {
         <SectionHeader eyebrow="// 01. about_me" title="About Me" />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-
           {/* Left Side — bio + info list */}
           <div>
             <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400 mb-4">
@@ -35,7 +34,11 @@ export default function AboutSection() {
               <strong className="text-slate-700 dark:text-blue-300 font-semibold">
                 Bipesh Junior Tharu
               </strong>
-              , a frontend developer from Nepalgunj, Nepal. I specialize in building fast, responsive, and scalable web applications using modern frontend technologies. I focus on creating clean user interfaces and well-structured frontend systems that deliver strong performance and smooth user experiences.
+              , a frontend developer from Nepalgunj, Nepal. I specialize in
+              building fast, responsive, and scalable web applications using
+              modern frontend technologies. I focus on creating clean user
+              interfaces and well-structured frontend systems that deliver
+              strong performance and smooth user experiences.
             </p>
 
             <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400 mb-4">
@@ -43,11 +46,14 @@ export default function AboutSection() {
               <strong className="text-slate-700 dark:text-blue-300 font-semibold">
                 1+ years
               </strong>{" "}
-              of experience, I have been building modern web applications ranging from simple UI components to scalable frontend architectures.
+              of experience, I have been building modern web applications
+              ranging from simple UI components to scalable frontend
+              architectures.
             </p>
 
             <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400">
-              Outside of development, I enjoy mentoring juniors, playing football, and exploring different places around Nepal.
+              Outside of development, I enjoy mentoring juniors, playing
+              football, and exploring different places around Nepal.
             </p>
           </div>
 
@@ -61,9 +67,10 @@ export default function AboutSection() {
                   onClick={() => setActiveTab(id)}
                   className={`flex items-center gap-2 px-10 py-3 rounded-full text-xs font-medium
                     border transition-all duration-200
-                    ${activeTab === id
-                      ? "bg-blue-600/10 text-blue-500 border-blue-500/30 dark:bg-blue-500/10 dark:text-blue-400"
-                      : "text-slate-500 border-slate-200 dark:border-white/10 hover:border-blue-400/40"
+                    ${
+                      activeTab === id
+                        ? "bg-blue-600/10 text-blue-500 border-blue-500/30 dark:bg-blue-500/10 dark:text-blue-400"
+                        : "text-slate-500 border-slate-200 dark:border-white/10 hover:border-blue-400/40"
                     }`}
                 >
                   <Icon size={15} />
@@ -78,12 +85,16 @@ export default function AboutSection() {
 
               {items.map((item, idx) => (
                 <div key={idx} className="relative mb-8 last:mb-0">
-                  <div className="absolute -left-[22px] top-[5px] w-[10px] h-[10px] rounded-full
+                  <div
+                    className="absolute -left-[22px] top-[5px] w-[10px] h-[10px] rounded-full
                     bg-blue-500 border-2 border-white dark:border-navy-800
-                    shadow-[0_0_0_2px_rgba(59,130,246,0.3)]" />
+                    shadow-[0_0_0_2px_rgba(59,130,246,0.3)]"
+                  />
 
-                  <span className="flex items-center gap-1.5 font-mono text-[11px] tracking-wide
-                    text-blue-500 dark:text-blue-400 mb-1">
+                  <span
+                    className="flex items-center gap-1.5 font-mono text-[11px] tracking-wide
+                    text-blue-500 dark:text-blue-400 mb-1"
+                  >
                     <CalendarDays size={11} />
                     {item.year}
                   </span>
@@ -105,7 +116,6 @@ export default function AboutSection() {
               ))}
             </div>
           </div>
-
         </div>
       </div>
     </section>

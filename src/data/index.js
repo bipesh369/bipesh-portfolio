@@ -19,10 +19,7 @@ export const NAV_LINKS = [
 ];
 
 // ─── Hero ────────────────────────────────────────────────────
-export const TYPEWRITER_ROLES = [
-  "Frontend Developer",
-  "React Developer",
-];
+export const TYPEWRITER_ROLES = ["Frontend Developer", "React Developer"];
 
 export const HERO_STATS = [
   { label: "React UI Systems" },
@@ -34,7 +31,8 @@ export const HERO_STATS = [
 export const EDUCATION = [
   {
     year: "2022 – Present",
-    degree: "Bachelor of Science in Computer Science and Information Technology (B.Sc. CSIT)",
+    degree:
+      "Bachelor of Science in Computer Science and Information Technology (B.Sc. CSIT)",
     school: "Mahendra Multiple Campus, Nepalgunj",
   },
   {
@@ -162,7 +160,19 @@ export const CONTACT_ITEMS = [
 // ─── Social ──────────────────────────────────────────────────
 export const SOCIAL_LINKS = [
   { icon: FaGithub, label: "GitHub", url: "https://github.com/bipesh369" },
-  { icon: FaLinkedin, label: "LinkedIn", url: "https://linkedin.com/in/bipeshjunior10" },
-  { icon: FaInstagram, label: "Instagram", url: "https://instagram.com/bipeshjr10" },
-  { icon: FaFacebook, label: "Facebook", url: "https://facebook.com/bipeshjunior" },
+  {
+    icon: FaLinkedin,
+    label: "LinkedIn",
+    url: "https://linkedin.com/in/bipeshjunior10",
+  },
+  {
+    icon: FaInstagram,
+    label: "Instagram",
+    url: "https://instagram.com/bipeshjr10",
+  },
+  {
+    icon: FaFacebook,
+    label: "Facebook",
+    url: "https://facebook.com/bipeshjunior",
+  },
 ];

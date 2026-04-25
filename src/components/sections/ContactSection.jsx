@@ -75,15 +75,15 @@ export default function ContactSection() {
       <div className="absolute bottom-0 left-8 right-8 md:left-16 md:right-16 h-px bg-gradient-to-r from-transparent via-blue-400/25 dark:via-cyan-400/25 to-transparent" />
 
       <div className="max-w-6xl mx-auto w-full relative z-10">
-
         <SectionHeader eyebrow="// 04. contact" title="Get In Touch" />
 
         <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400 mt-5 mb-10">
-          I'm currently open to new opportunities and collaborations. Whether it's a project idea, technical question, or something you're building — feel free to reach out. I usually respond within 24 to 48 hours.
+          I'm currently open to new opportunities and collaborations. Whether
+          it's a project idea, technical question, or something you're building
+          — feel free to reach out. I usually respond within 24 to 48 hours.
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] gap-10 lg:gap-14 items-start">
-
           {/* LEFT */}
           <div className="space-y-3">
             {CONTACT_ITEMS.map((item) => (
@@ -136,7 +136,6 @@ export default function ContactSection() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
-
                 <div className="grid sm:grid-cols-2 gap-4">
                   <input
                     name="name"
@@ -185,11 +184,9 @@ export default function ContactSection() {
                 >
                   {sending ? "Sending..." : "Let’s Build Something →"}
                 </button>
-
               </form>
             )}
           </div>
-
         </div>
       </div>
     </section>
