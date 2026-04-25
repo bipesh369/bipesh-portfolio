@@ -21,7 +21,6 @@ export default function AboutSection() {
       ref={ref}
       className={`min-h-screen flex flex-col justify-center px-8 md:px-16 py-24
         bg-white dark:bg-navy-800
-        border-b border-blue-100/60 dark:border-white/[0.06]
         section-animate ${visible ? "visible" : ""}`}
     >
       <div className="max-w-6xl mx-auto w-full">
@@ -36,8 +35,7 @@ export default function AboutSection() {
               <strong className="text-slate-700 dark:text-blue-300 font-semibold">
                 Bipesh Junior Tharu
               </strong>
-              , a frontend developer based in Nepalgunj, Nepal. I love turning
-              complex problems into elegant, high-performing digital products.
+              , a frontend developer from Nepalgunj, Nepal. I specialize in building fast, responsive, and scalable web applications using modern frontend technologies. I focus on creating clean user interfaces and well-structured frontend systems that deliver strong performance and smooth user experiences.
             </p>
 
             <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400 mb-4">
@@ -45,13 +43,11 @@ export default function AboutSection() {
               <strong className="text-slate-700 dark:text-blue-300 font-semibold">
                 1+ years
               </strong>{" "}
-              of experience, I build modern web applications — from clean UIs to
-              scalable frontend architectures.
+              of experience, I have been building modern web applications ranging from simple UI components to scalable frontend architectures.
             </p>
 
             <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400">
-              When I'm not building things, I'm mentoring juniors, playing
-              football, or exploring different parts of Nepal.
+              Outside of development, I enjoy mentoring juniors, playing football, and exploring different places around Nepal.
             </p>
           </div>
 

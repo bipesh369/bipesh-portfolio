@@ -1,31 +1,36 @@
-import { FaMapMarkerAlt, FaEnvelope, FaGlobe } from "react-icons/fa";
-import { FaGithub, FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
-import { FaHtml5, FaCss3Alt, FaReact, FaJs } from "react-icons/fa";
-import { SiTailwindcss, SiTypescript, SiNextdotjs } from "react-icons/si";
-import { FaWhatsapp } from "react-icons/fa";
+import {
+  FaMapMarkerAlt,
+  FaEnvelope,
+  FaGlobe,
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaFacebook,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 // ─── Navigation ──────────────────────────────────────────────
 export const NAV_LINKS = [
-  { id: "home",     label: "Home",     icon: "⌂" },
-  { id: "about",    label: "About",    icon: "◉" },
-  { id: "skills",   label: "Skills",   icon: "◈" },
+  { id: "home", label: "Home", icon: "⌂" },
+  { id: "about", label: "About", icon: "◉" },
+  { id: "skills", label: "Skills", icon: "◈" },
   { id: "projects", label: "Projects", icon: "◧" },
-  { id: "contact",  label: "Contact",  icon: "◎" },
+  { id: "contact", label: "Contact", icon: "◎" },
 ];
 
 // ─── Hero ────────────────────────────────────────────────────
 export const TYPEWRITER_ROLES = [
   "Frontend Developer",
-  "React.js Specialist",
+  "React Developer",
 ];
 
 export const HERO_STATS = [
-  { num: "1+",  label: "Years Exp"  },
-  { num: "1+", label: "Projects"   },
-  { num: "1+", label: "Clients"    },
+  { label: "React UI Systems" },
+  { label: "Responsive Layouts" },
+  { label: "Performance Focused" },
 ];
 
-// ─── Eductional Info───────────────────────────────────────────────────
+// ─── Education ──────────────────────────────────────────────
 export const EDUCATION = [
   {
     year: "2022 – Present",
@@ -39,44 +44,95 @@ export const EDUCATION = [
   },
 ];
 
-// Experiences
+// ─── Experience ─────────────────────────────────────────────
 export const EXPERIENCE = [
   {
-    year:    "2025 – Present",
-    role:    "Frontend Developer",
+    year: "2025 – Present",
+    role: "Frontend Developer",
     company: "Karnali Creative",
-    desc:    "Building scalable React apps with TypeScript, Redux, and real-time features.",
+    desc: "Building scalable React apps with modern UI systems and performance-first architecture.",
   },
 ];
 
 // ─── Skills ──────────────────────────────────────────────────
 export const SKILLS = [
-  { name: "HTML", icon: FaHtml5, pct: 85 },
-  { name: "CSS", icon: FaCss3Alt, pct: 85 },
-  { name: "JavaScript", icon: FaJs, pct: 85 },
-  { name: "React.js", icon: FaReact, pct: 80 },
-  { name: "Tailwind CSS", icon: SiTailwindcss, pct: 85 },
-  { name: "TypeScript", icon: SiTypescript, pct: 80 },
-  { name: "Next.js", icon: SiNextdotjs, pct: 60 },
-];
-
-export const EXTRA_TECH = [
-  "Vite","Git", "Github", "Responsive Design"
+  {
+    category: "Core Technologies",
+    items: [
+      {
+        name: "HTML5",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      },
+      {
+        name: "CSS3",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      },
+      {
+        name: "JavaScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      },
+      {
+        name: "TypeScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      },
+    ],
+  },
+  {
+    category: "Frontend Stack",
+    items: [
+      {
+        name: "React.js",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      },
+      {
+        name: "Next.js",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg",
+      },
+      {
+        name: "Tailwind CSS",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+      },
+    ],
+  },
+  {
+    category: "Tools & Workflow",
+    items: [
+      {
+        name: "Vite",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg",
+      },
+      {
+        name: "Git",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      },
+      {
+        name: "GitHub",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      },
+    ],
+  },
 ];
 
 // ─── Projects ────────────────────────────────────────────────
 export const PROJECTS = [
   {
-    num:   "01",
+    num: "01",
     title: "ManMaya Hospitality",
-    desc:  "Comprehensive tour package and hospitality management system for smooth trip planning.",
-    tags:  ["React.js", "TypeScript", "Tailwind CSS", "Axios/Fetch API", "React Router", "Node.js", "Express.js", "MongoDB"],
-    demo:  "https://manmayahospitality.com",
-    code:  "#",
+    desc: "Tour and hospitality management system for seamless trip planning.",
+    tags: [
+      "React.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+    ],
+    demo: "https://manmayahospitality.com",
+    code: "#",
   },
 ];
 
-// ─── Contact ───────────────────────────────────────────────
+// ─── Contact ────────────────────────────────────────────────
 export const CONTACT_ITEMS = [
   {
     icon: FaMapMarkerAlt,
@@ -85,7 +141,7 @@ export const CONTACT_ITEMS = [
   },
   {
     icon: FaEnvelope,
-    label: "Email Me",
+    label: "Email",
     value: "juniorbipesh@gmail.com",
     link: "mailto:juniorbipesh@gmail.com",
   },
@@ -106,7 +162,7 @@ export const CONTACT_ITEMS = [
 // ─── Social ──────────────────────────────────────────────────
 export const SOCIAL_LINKS = [
   { icon: FaGithub, label: "GitHub", url: "https://github.com/bipesh369" },
-  { icon: FaLinkedin, label: "LinkedIn", url: "https://www.linkedin.com/in/bipeshjunior10" },
-  { icon: FaInstagram, label: "Instagram", url: "https://www.instagram.com/bipeshjr10" },
-  { icon: FaFacebook, label: "Facebook", url: "https://www.facebook.com/bipeshjunior" },
+  { icon: FaLinkedin, label: "LinkedIn", url: "https://linkedin.com/in/bipeshjunior10" },
+  { icon: FaInstagram, label: "Instagram", url: "https://instagram.com/bipeshjr10" },
+  { icon: FaFacebook, label: "Facebook", url: "https://facebook.com/bipeshjunior" },
 ];

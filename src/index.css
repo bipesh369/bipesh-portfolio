@@ -32,7 +32,6 @@
 
 /* ── Components ───────────────────────────── */
 @layer components {
-
   /* Section Animation */
   .section-animate {
     @apply opacity-0 translate-y-6 transition-all duration-700 ease-out;
@@ -70,6 +69,29 @@
   .project-card:hover::before {
     transform: scaleX(1);
   }
+
+  /* Premium Mini Stat Card */
+  .mini-stat-card {
+    @apply relative overflow-hidden;
+  }
+
+  .mini-stat-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -130%;
+    width: 90%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent
+    );
+    transform: skewX(-20deg);
+    animation: shimmerMini 5s linear infinite;
+    pointer-events: none;
+  }
 }
 
 /* ── Utilities ───────────────────────────── */
@@ -87,5 +109,26 @@
 @keyframes blink {
   50% {
     opacity: 0;
+  }
+}
+
+@keyframes floatMini {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes shimmerMini {
+  0% {
+    left: -130%;
+  }
+  100% {
+    left: 150%;
   }
 }
