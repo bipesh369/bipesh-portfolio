@@ -19,12 +19,12 @@ export const NAV_LINKS = [
 ];
 
 // ─── Hero ────────────────────────────────────────────────────
-export const TYPEWRITER_ROLES = ["Frontend Developer", "React Developer"];
+export const TYPEWRITER_ROLES = ["Frontend Developer", "React Specialist"];
 
 export const HERO_STATS = [
-  { label: "React UI Systems" },
-  { label: "Responsive Layouts" },
-  { label: "Performance Focused" },
+  { label: "Component Architecture" },
+  { label: "UX Performance Focus" },
+  { label: "Responsive Design Systems" },
 ];
 
 // ─── Education ──────────────────────────────────────────────
@@ -114,20 +114,14 @@ export const SKILLS = [
 // ─── Projects ────────────────────────────────────────────────
 export const PROJECTS = [
   {
-    num: "01",
+    num: 1,
     title: "ManMaya Hospitality",
-    desc: "Tour and hospitality management system for seamless trip planning.",
-    tags: [
-      "React.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-    ],
-    demo: "https://manmayahospitality.com",
-    code: "#",
+    desc: "A full-stack tour and hospitality platform that lets travelers browse, plan, and book trips across Nepal — built for real users, not just a portfolio piece.",
+    tags: ["React.js", "TypeScript", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
+    demo: "https://manmayahospitality.com/",
+    code: "", // Add your GitHub URL here, or leave empty to hide the button
   },
+  // Add more projects here as you build them
 ];
 
 // ─── Contact ────────────────────────────────────────────────

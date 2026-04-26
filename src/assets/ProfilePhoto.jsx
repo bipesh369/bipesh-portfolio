@@ -22,7 +22,7 @@ export default function ProfilePhoto({ className = "" }) {
       <div className="absolute bottom-2 right-2 flex items-center gap-1.5 bg-white dark:bg-navy-900 rounded-full px-2.5 py-1 shadow-lg border border-blue-100 dark:border-blue-900">
         <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
         <span className="text-[10px] font-mono font-medium text-slate-600 dark:text-slate-300 tracking-wide">
-          Available
+          Bipeshjr
         </span>
       </div>
     </div>

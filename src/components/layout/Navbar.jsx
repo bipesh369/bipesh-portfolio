@@ -11,12 +11,20 @@ export default function Navbar({ activeSection, onNavClick }) {
     setOpen(false);
   };
 
+  // ✅ Logo click handler (go to home section)
+  const goHome = () => {
+    handleClick("home"); // change to "hero" if your section id is hero
+  };
+
   return (
     <header className="fixed top-0 left-0 w-full z-[100] bg-gray-100/90 dark:bg-navy-950/90 backdrop-blur-md border-b border-black/10 dark:border-white/[0.15]">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 h-16">
 
         {/* Logo */}
-        <div className="font-display text-3xl font-extrabold text-blue-600 dark:text-blue-400">
+        <div
+          onClick={goHome}
+          className="font-display text-3xl font-extrabold text-blue-600 dark:text-blue-400 cursor-pointer hover:scale-105 transition-transform duration-200"
+        >
           BJR
         </div>
 
@@ -26,12 +34,11 @@ export default function Navbar({ activeSection, onNavClick }) {
             <button
               key={link.id}
               onClick={() => handleClick(link.id)}
-              className={`text-sm font-medium transition-colors
-                ${
-                  activeSection === link.id
-                    ? "text-blue-600 dark:text-blue-400"
-                    : "text-gray-700 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-300"
-                }`}
+              className={`text-sm font-medium transition-colors ${
+                activeSection === link.id
+                  ? "text-blue-600 dark:text-blue-400"
+                  : "text-gray-700 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-300"
+              }`}
             >
               {link.label}
             </button>
@@ -61,12 +68,11 @@ export default function Navbar({ activeSection, onNavClick }) {
               <button
                 key={link.id}
                 onClick={() => handleClick(link.id)}
-                className={`text-left text-sm font-medium transition-colors
-                  ${
-                    activeSection === link.id
-                      ? "text-blue-600 dark:text-blue-400"
-                      : "text-gray-700 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-300"
-                  }`}
+                className={`text-left text-sm font-medium transition-colors ${
+                  activeSection === link.id
+                    ? "text-blue-600 dark:text-blue-400"
+                    : "text-gray-700 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-300"
+                }`}
               >
                 {link.label}
               </button>

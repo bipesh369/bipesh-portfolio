@@ -27,33 +27,37 @@ export default function AboutSection() {
         <SectionHeader eyebrow="// 01. about_me" title="About Me" />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-          {/* Left Side — bio + info list */}
+          {/* Left Side — bio */}
           <div>
             <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400 mb-4">
-              Hey! I'm{" "}
+              I'm{" "}
               <strong className="text-slate-700 dark:text-blue-300 font-semibold">
                 Bipesh Junior Tharu
-              </strong>
-              , a frontend developer from Nepalgunj, Nepal. I specialize in
-              building fast, responsive, and scalable web applications using
-              modern frontend technologies. I focus on creating clean user
-              interfaces and well-structured frontend systems that deliver
-              strong performance and smooth user experiences.
+              </strong>{" "}
+              — a frontend developer from Nepalgunj, Nepal, on my way to
+              becoming a full-stack developer. Right now I'm deep in the
+              frontend, and I've come to realize that doing it properly is
+              harder, and more rewarding, than I expected.
             </p>
 
             <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400 mb-4">
-              With{" "}
+              I obsess over the details most people skip —{" "}
               <strong className="text-slate-700 dark:text-blue-300 font-semibold">
-                1+ years
+                pixel-accurate layouts, animations that feel native,
               </strong>{" "}
-              of experience, I have been building modern web applications
-              ranging from simple UI components to scalable frontend
-              architectures.
+              and code the next developer won't curse at. Not because I have
+              to. Because anything less than that bothers me.
             </p>
 
             <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400">
-              Outside of development, I enjoy mentoring juniors, playing
-              football, and exploring different places around Nepal.
+              I also mentor juniors at college — explaining things forces you
+              to actually understand them, and it's made me a{" "}
+              <strong className="text-slate-700 dark:text-blue-300 font-semibold">
+                better developer
+              </strong>{" "}
+              more than anything else has. Away from the screen — football,
+              and drives with friends through corners of Nepal most people haven't
+              found yet.
             </p>
           </div>
 

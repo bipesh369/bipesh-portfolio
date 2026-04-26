@@ -24,20 +24,16 @@ export default function ProjectsSection() {
       <div className="absolute bottom-0 left-8 right-8 md:left-16 md:right-16 h-px bg-gradient-to-r from-transparent via-blue-400/25 dark:via-cyan-400/25 to-transparent" />
 
       <div className="max-w-6xl mx-auto w-full">
-        <SectionHeader eyebrow="// 03. projects" title="Featured Work" />
 
-        <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400 mt-4 mb-10">
-          Selected projects focused on building scalable, performant, and
-          user-centered web applications with clean architecture and modern UI
-          systems.
-        </p>
+        {/* Header — no description paragraph, it was generic filler */}
+        <SectionHeader eyebrow="// 03. projects" title="Selected Work" />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-          {PROJECTS.map((project, idx) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10">
+          {PROJECTS.map((project) => (
             <article
               key={project.num}
               className={`
-                group relative overflow-hidden rounded-2xl p-6
+                group relative flex flex-col overflow-hidden rounded-2xl p-6
                 bg-white dark:bg-navy-950
                 border border-slate-200 dark:border-white/[0.07]
                 hover:border-blue-400/50 dark:hover:border-cyan-400/40
@@ -46,9 +42,20 @@ export default function ProjectsSection() {
                 transition-all duration-300
               `}
             >
-              <p className="font-mono text-[0.6rem] tracking-[0.25em] uppercase text-slate-400 dark:text-slate-600 mb-3">
-                Project {project.num}
-              </p>
+              {/* Project number + status */}
+              <div className="flex items-center justify-between mb-3">
+                <p className="font-mono text-[0.6rem] tracking-[0.25em] uppercase text-slate-400 dark:text-slate-600">
+                  Project {String(project.num).padStart(2, "0")}
+                </p>
+
+                {/* Live indicator — only shows if demo link exists and is not localhost */}
+                {project.demo && !project.demo.includes("localhost") && (
+                  <span className="flex items-center gap-1.5 font-mono text-[0.55rem] tracking-widest uppercase text-emerald-600 dark:text-emerald-400">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                    Live
+                  </span>
+                )}
+              </div>
 
               <h3 className="font-display text-lg font-bold text-slate-900 dark:text-white mb-2">
                 {project.title}
@@ -58,7 +65,8 @@ export default function ProjectsSection() {
                 {project.desc}
               </p>
 
-              <div className="flex flex-wrap gap-1.5">
+              {/* Tags */}
+              <div className="flex flex-wrap gap-1.5 mb-5">
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
@@ -72,24 +80,36 @@ export default function ProjectsSection() {
                 ))}
               </div>
 
-              <div className="flex gap-5 mt-5 pt-4 border-t border-slate-100 dark:border-white/[0.06]">
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-mono text-[0.65rem] tracking-wider uppercase text-blue-600 dark:text-blue-400"
-                >
-                  ↗ Live Demo
-                </a>
+              {/* Links — pushed to bottom, hide code link if localhost */}
+              <div className="flex gap-5 mt-auto pt-4 border-t border-slate-100 dark:border-white/[0.06]">
+                {project.demo && !project.demo.includes("localhost") && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-mono text-[0.65rem] tracking-wider uppercase
+                    text-blue-600 dark:text-blue-400
+                    hover:text-blue-800 dark:hover:text-blue-300
+                    transition-colors duration-200"
+                  >
+                    ↗ Live Demo
+                  </a>
+                )}
 
-                <a
-                  href={project.code}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-mono text-[0.65rem] tracking-wider uppercase text-blue-600 dark:text-blue-400"
-                >
-                  ⌥ View Code
-                </a>
+                {project.code &&
+                  !project.code.includes("localhost") && (
+                    <a
+                      href={project.code}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="font-mono text-[0.65rem] tracking-wider uppercase
+                      text-slate-400 dark:text-slate-500
+                      hover:text-blue-600 dark:hover:text-blue-400
+                      transition-colors duration-200"
+                    >
+                      ⌥ View Code
+                    </a>
+                  )}
               </div>
             </article>
           ))}

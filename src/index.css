@@ -2,17 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ── Base Styles ───────────────────────────── */
+/* ───────── BASE ───────── */
 @layer base {
   html {
     scroll-behavior: smooth;
   }
 
   body {
-    @apply font-body antialiased;
+    @apply font-body antialiased bg-white dark:bg-navy-950;
+    overflow-x: hidden;
   }
 
-  /* Custom Scrollbar */
   ::-webkit-scrollbar {
     width: 6px;
   }
@@ -30,9 +30,8 @@
   }
 }
 
-/* ── Components ───────────────────────────── */
+/* ───────── COMPONENTS ───────── */
 @layer components {
-  /* Section Animation */
   .section-animate {
     @apply opacity-0 translate-y-6 transition-all duration-700 ease-out;
   }
@@ -41,16 +40,13 @@
     @apply opacity-100 translate-y-0;
   }
 
-  /* Skill Bar */
   .skill-fill {
-    @apply h-full rounded-full bg-gradient-to-r
-           from-blue-700 to-blue-400
+    @apply h-full rounded-full bg-gradient-to-r from-blue-700 to-blue-400
            transition-all duration-[1400ms] ease-out;
   }
 
-  /* Project Card Hover Line */
   .project-card {
-    @apply relative;
+    @apply relative overflow-hidden;
   }
 
   .project-card::before {
@@ -63,14 +59,13 @@
     background: linear-gradient(to right, #1d4ed8, #60a5fa);
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform 0.3s ease;
+    transition: transform 0.35s ease;
   }
 
   .project-card:hover::before {
     transform: scaleX(1);
   }
 
-  /* Premium Mini Stat Card */
   .mini-stat-card {
     @apply relative overflow-hidden;
   }
@@ -85,7 +80,7 @@
     background: linear-gradient(
       120deg,
       transparent,
-      rgba(255, 255, 255, 0.4),
+      rgba(255,255,255,0.4),
       transparent
     );
     transform: skewX(-20deg);
@@ -94,33 +89,73 @@
   }
 }
 
-/* ── Utilities ───────────────────────────── */
+/* ───────── UTILITIES ───────── */
 @layer utilities {
   .cursor-blink {
     display: inline-block;
     width: 2px;
     height: 1.1em;
-    margin-left: 3px;
+    margin-left: 4px;
+    border-radius: 20px;
     animation: blink 1s step-end infinite;
+  }
+
+  .animate-float {
+    animation: float 5s ease-in-out infinite;
+  }
+
+  .animate-float-slow {
+    animation: floatSlow 8s ease-in-out infinite;
+  }
+
+  .animate-spin-slow {
+    animation: spinSlow 18s linear infinite;
+  }
+
+  /* PROFILE FLOAT (clean) */
+  .animate-float-profile {
+    animation: floatProfile 6s ease-in-out infinite;
   }
 }
 
-/* ── Animations ───────────────────────────── */
+/* ───────── KEYFRAMES ───────── */
+
 @keyframes blink {
   50% {
     opacity: 0;
   }
 }
 
-@keyframes floatMini {
+@keyframes float {
   0% {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-4px);
+    transform: translateY(-10px);
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+@keyframes floatSlow {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(-14px) translateX(8px);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
@@ -131,4 +166,18 @@
   100% {
     left: 150%;
   }
+}
+
+/* WAVE ANIMATION */
+@keyframes waveFloat {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+/* PROFILE FLOAT */
+@keyframes floatProfile {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-14px); }
+  100% { transform: translateY(0px); }
 }
