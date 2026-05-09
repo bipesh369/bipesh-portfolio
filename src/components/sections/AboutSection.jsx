@@ -34,26 +34,33 @@ export default function AboutSection() {
               <strong className="text-slate-700 dark:text-blue-300 font-semibold">
                 Bipesh Junior Tharu
               </strong>{" "}
-              — a frontend developer from Nepalgunj, Nepal, working toward
+              a frontend developer from Nepalgunj, Nepal, working toward
               becoming a full-stack developer. Right now, I’m focused on
               frontend development, and I’ve realized the real challenge isn’t
               building things fast, but building them properly.
             </p>
 
             <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400 mb-4">
-             The deeper I go, the more I appreciate the importance of getting the fundamentals right. I focus on details that shape real user experience —{" "}
+              The deeper I go, the more I appreciate the importance of getting
+              the fundamentals right. I focus on details that shape real user
+              experience —{" "}
               <strong className="text-slate-700 dark:text-blue-300 font-semibold">
-               precise layouts, smooth interactions,
+                precise layouts, smooth interactions,
               </strong>{" "}
-            and code that remains readable long after it’s written. I prefer simplicity and structure over unnecessary complexity.
+              and code that remains readable long after it’s written. I prefer
+              simplicity and structure over unnecessary complexity.
             </p>
 
             <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400 mb-4">
-              I also mentor juniors at college. Explaining concepts regularly has strengthened my own understanding and made me more intentional in how I learn and build.
+              I also mentor juniors at college. Explaining concepts regularly
+              has strengthened my own understanding and made me more intentional
+              in how I learn and build.
             </p>
 
             <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400">
-              Outside of development, I play football and go on drives with friends across different parts of Nepal — a simple way to balance long hours of screen work.
+              Outside of development, I play football and go on drives with
+              friends across different parts of Nepal — a simple way to balance
+              long hours of screen work.
             </p>
           </div>
 
