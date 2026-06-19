@@ -30,13 +30,13 @@ export const HERO_STATS = [
 // ─── Education ──────────────────────────────────────────────
 export const EDUCATION = [
   {
-    year: "2022 – Present",
+    year: "2023 – Present",
     degree:
       "Bachelor of Science in Computer Science and Information Technology (B.Sc. CSIT)",
     school: "Mahendra Multiple Campus, Nepalgunj",
   },
   {
-    year: "2019 – 2021",
+    year: "2020 – 2022",
     degree: "+2 Science",
     school: "Holyland English Secondary School, Nepalgunj",
   },
