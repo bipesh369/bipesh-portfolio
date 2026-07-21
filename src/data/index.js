@@ -114,13 +114,14 @@ export const SKILLS = [
 // ─── Projects ────────────────────────────────────────────────
 export const PROJECTS = [
   {
-    num: 1,
-    title: "ManMaya Hospitality",
-    desc: "A full-stack tour and hospitality platform that lets travelers browse, plan, and book trips across Nepal — built for real users, not just a portfolio piece.",
-    tags: ["React.js", "TypeScript", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
-    demo: "https://manmayahospitality.com/",
-    code: "", // Add your GitHub URL here, or leave empty to hide the button
-  },
+  num: 1,
+  title: "Agency.ai",
+  desc: "A modern AI-powered digital agency platform designed to help businesses build, grow, and transform their digital presence with innovative technology and creative solutions.",
+  tags: ["React.js", "Tailwind CSS", "Motion", "JavaScript"],
+  demo: "https://agency-ai-five-coral.vercel.app/",
+  code: "https://github.com/bipesh369/agency.ai.git", // Add your GitHub URL here, or leave empty to hide the button
+},
+
   // Add more projects here as you build them
 ];
 
