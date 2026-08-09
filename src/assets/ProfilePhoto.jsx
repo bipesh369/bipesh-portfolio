@@ -1,4 +1,4 @@
-import photo from "../assets/bjr.jpg";
+import photo from "../assets/bjr.png";
 
 export default function ProfilePhoto({ className = "" }) {
   return (
