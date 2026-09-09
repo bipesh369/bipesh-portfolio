@@ -121,6 +121,14 @@ export const PROJECTS = [
   demo: "https://agency-ai-five-coral.vercel.app/",
   code: "https://github.com/bipesh369/agency.ai.git", // Add your GitHub URL here, or leave empty to hide the button
 },
+{
+    num: 2,
+    title: "SewaPath",
+    desc: "A citizen-focused platform that brings government service information into one place, allowing users to check eligibility, required documents, fees, processing time, and application steps before applying.",
+    tags: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
+    demo: "https://sewapath-frontend.vercel.app/",
+    code: "https://github.com/bipesh369/sewapath.git", // Add your GitHub URL here, or leave empty to hide the button
+  },
 
   // Add more projects here as you build them
 ];
