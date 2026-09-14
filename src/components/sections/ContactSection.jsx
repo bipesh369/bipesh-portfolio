@@ -80,20 +80,29 @@ export default function ContactSection() {
 
         {/* Paragraph — tighter, no repetition, response time kept as trust signal */}
         <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400 mt-5 mb-10">
-          Have a project in mind, or just want to talk frontend? I'm open to
-          new opportunities and always happy to hear what you're building.
-          I reply within 24–48 hours.
+          Have a project in mind, or just want to talk frontend? I'm open to new
+          opportunities and always happy to hear what you're building. I reply
+          within 24–48 hours.
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] gap-10 lg:gap-14 items-start">
           {/* LEFT — contact info cards */}
           <div className="space-y-3">
             {CONTACT_ITEMS.map((item) => {
-              const isWhatsApp = item.label.toLowerCase() === "whatsapp";
+              const label = item.label.toLowerCase();
+
+              const isWhatsApp = label === "whatsapp";
+              const isEmail = label === "email" || label === "gmail";
+
               const phone = item.value?.replace(/\s+/g, "");
+
               const href = isWhatsApp
                 ? `https://wa.me/${phone.replace("+", "")}`
-                : item.href ?? null;
+                : isEmail
+                  ? `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+                      item.value,
+                    )}`
+                  : (item.href ?? null);
 
               const Inner = (
                 <div
@@ -151,7 +160,15 @@ export default function ContactSection() {
             {sent ? (
               <div className="flex flex-col items-center justify-center py-14 text-center">
                 <div className="w-14 h-14 rounded-full bg-emerald-50 dark:bg-emerald-950/40 flex items-center justify-center mb-5">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-emerald-500">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    className="text-emerald-500"
+                  >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
                 </div>
@@ -159,7 +176,8 @@ export default function ContactSection() {
                   Message sent
                 </h3>
                 <p className="text-sm text-slate-500 dark:text-slate-400 max-w-sm">
-                  Thanks for reaching out — I'll get back to you within 24–48 hours.
+                  Thanks for reaching out — I'll get back to you within 24–48
+                  hours.
                 </p>
               </div>
             ) : (
@@ -242,9 +260,24 @@ export default function ContactSection() {
                 >
                   {sending ? (
                     <>
-                      <svg className="animate-spin w-3.5 h-3.5" viewBox="0 0 24 24" fill="none">
-                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" />
+                      <svg
+                        className="animate-spin w-3.5 h-3.5"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        />
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8v8z"
+                        />
                       </svg>
                       Sending...
                     </>
