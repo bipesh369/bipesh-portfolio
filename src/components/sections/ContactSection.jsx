@@ -282,7 +282,7 @@ export default function ContactSection() {
                       Sending...
                     </>
                   ) : (
-                    "Send Message →"
+                    "Send Message"
                   )}
                 </button>
               </form>
