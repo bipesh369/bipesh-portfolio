@@ -80,15 +80,15 @@ export default function HeroSection({ onNavClick }) {
           <p className="text-sm leading-[1.9] text-slate-500 dark:text-slate-400 max-w-[480px] mb-9">
             I build{" "}
             <span className="text-slate-700 dark:text-slate-200 font-medium">
-              scalable React interfaces
+              modern full-stack applications
             </span>{" "}
-            with clean architecture and smooth interactions, focused on fast,
-            intuitive, and reliable real-world experiences with performance and clarity in mind.
+            with the MERN stack, combining clean architecture, reliable APIs,
+            and refined interfaces to create fast, scalable, and meaningful
+            digital experiences.
           </p>
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-3 mb-10">
-
             {/* Primary */}
             <button
               onClick={() => onNavClick("projects")}
@@ -131,7 +131,6 @@ export default function HeroSection({ onNavClick }) {
               <FaCommentDots className="text-[12px]" />
               Let's talk
             </button>
-
           </div>
 
           {/* Stats */}

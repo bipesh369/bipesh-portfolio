@@ -1,11 +1,19 @@
 import { SKILLS } from "../../data";
+
 import SectionHeader from "../layout/SectionHeader";
 
-const DARK_ICONS = ["GitHub"];
+const DARK_ICONS = ["GitHub", "Express", "Vercel", "Render", "JWT"];
 
 const fixedIcons = {
-  "Next.js":
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+  "Next.js": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+
+  Express: "https://cdn.simpleicons.org/express/000000",
+
+  Vercel: "https://cdn.simpleicons.org/vercel/000000",
+
+  Render: "https://cdn.simpleicons.org/render/000000",
+
+  JWT: "https://cdn.simpleicons.org/jsonwebtokens/000000",
 };
 
 export default function Skills() {
@@ -35,9 +43,11 @@ export default function Skills() {
             <div key={gi} className="flex flex-col items-center flex-1">
               <div className="flex items-center gap-3 mb-6 w-full">
                 <div className="flex-1 h-px bg-gradient-to-r from-transparent to-blue-500/40 dark:to-cyan-400/40" />
+
                 <span className="text-[10px] font-bold tracking-[0.35em] uppercase text-blue-600 dark:text-cyan-400 whitespace-nowrap">
                   {group.category}
                 </span>
+
                 <div className="flex-1 h-px bg-gradient-to-l from-transparent to-blue-500/40 dark:to-cyan-400/40" />
               </div>
 
@@ -56,6 +66,7 @@ export default function Skills() {
                   >
                     <div className="relative flex items-center justify-center w-14 h-14 rounded-xl bg-white dark:bg-navy-800 border border-slate-200 dark:border-white/5">
                       <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-500 bg-gradient-to-br from-blue-500/20 to-cyan-400/20 blur-md scale-110" />
+
                       <img
                         src={fixedIcons[skill.name] ?? skill.icon}
                         alt={skill.name}
@@ -80,9 +91,11 @@ export default function Skills() {
         {/* FOOTER */}
         <div className="mt-auto pt-10 flex items-center justify-center w-full">
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-blue-400/40 dark:via-cyan-400/40 to-transparent" />
+
           <span className="px-4 text-[8px] font-mono tracking-[0.18em] uppercase text-slate-400/80 dark:text-slate-500/80 whitespace-nowrap">
             the stack grows with the project
           </span>
+
           <div className="flex-1 h-px bg-gradient-to-l from-transparent via-blue-400/40 dark:via-cyan-400/40 to-transparent" />
         </div>
       </div>
@@ -101,6 +114,7 @@ export default function Skills() {
             transform: translate(60px, 40px) scale(1.1);
           }
         }
+
         @keyframes float2 {
           0%,
           100% {
@@ -110,6 +124,7 @@ export default function Skills() {
             transform: translate(-50px, -40px) scale(1.15);
           }
         }
+
         @keyframes float3 {
           0%,
           100% {
@@ -119,12 +134,15 @@ export default function Skills() {
             transform: translate(40px, -50px) scale(1.05);
           }
         }
+
         .animate-float1 {
           animation: float1 12s ease-in-out infinite;
         }
+
         .animate-float2 {
           animation: float2 14s ease-in-out infinite;
         }
+
         .animate-float3 {
           animation: float3 16s ease-in-out infinite;
         }

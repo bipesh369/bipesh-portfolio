@@ -33,34 +33,37 @@ export default function AboutSection() {
               I’m{" "}
               <strong className="text-slate-700 dark:text-blue-300 font-semibold">
                 Bipesh Junior Tharu
-              </strong>{" "}
-              a frontend developer from Nepalgunj, Nepal, working toward
-              becoming a full-stack developer. Right now, I’m focused on
-              frontend development, and I’ve realized the real challenge isn’t
-              building things fast, but building them properly.
+              </strong>
+              , a developer from Nepalgunj, Nepal. I started with frontend
+              development and gradually became curious about what happens behind
+              the screen - APIs, databases, authentication, and how different
+              parts of an application work together.
             </p>
 
             <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400 mb-4">
-              The deeper I go, the more I appreciate the importance of getting
-              the fundamentals right. I focus on details that shape real user
-              experience —{" "}
+              These days, I’m working with the{" "}
               <strong className="text-slate-700 dark:text-blue-300 font-semibold">
-                precise layouts, smooth interactions,
+                MERN stack
               </strong>{" "}
-              and code that remains readable long after it’s written. I prefer
-              simplicity and structure over unnecessary complexity.
+              and learning mostly by building real projects. I enjoy turning
+              ideas into working products, solving problems along the way, and
+              understanding why things work instead of just following tutorials.
             </p>
 
             <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400 mb-4">
-              I also mentor juniors at college. Explaining concepts regularly
-              has strengthened my own understanding and made me more intentional
-              in how I learn and build.
+              I care about the details too -{" "}
+              <strong className="text-slate-700 dark:text-blue-300 font-semibold">
+                clean UI, simple structure, readable code, and smooth
+                interactions.
+              </strong>{" "}
+              I’m still growing as a developer, but I try to improve with every
+              project I build.
             </p>
 
             <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400">
-              Outside of development, I play football and go on drives with
-              friends across different parts of Nepal — a simple way to balance
-              long hours of screen work.
+              Outside coding, I play football, go on drives with friends around
+              different parts of Nepal, and enjoy helping juniors at college
+              whenever I can.
             </p>
           </div>
 

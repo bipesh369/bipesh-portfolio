@@ -9,7 +9,6 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 
-
 // ─── Navigation ──────────────────────────────────────────────
 export const NAV_LINKS = [
   { id: "home", label: "Home", icon: "⌂" },
@@ -20,12 +19,14 @@ export const NAV_LINKS = [
 ];
 
 // ─── Hero ────────────────────────────────────────────────────
-export const TYPEWRITER_ROLES = ["Frontend Developer", "React Specialist"];
+export const TYPEWRITER_ROLES = [
+  "Full-Stack Developer",
+];
 
 export const HERO_STATS = [
-  { label: "Component Architecture" },
-  { label: "UX Performance Focus" },
-  { label: "Responsive Design Systems" },
+  { label: "Full-Stack Web Applications" },
+  { label: "API & Backend Architecture" },
+  { label: "Modern UI & UX" },
 ];
 
 // ─── Education ──────────────────────────────────────────────
@@ -165,14 +166,14 @@ export const SKILLS = [
 // ─── Projects ────────────────────────────────────────────────
 export const PROJECTS = [
   {
-  num: 1,
-  title: "Agency.ai",
-  desc: "A modern AI-powered digital agency platform designed to help businesses build, grow, and transform their digital presence with innovative technology and creative solutions.",
-  tags: ["React.js", "Tailwind CSS", "Motion", "JavaScript"],
-  demo: "https://agency-ai-five-coral.vercel.app/",
-  code: "https://github.com/bipesh369/agency.ai.git", // Add your GitHub URL here, or leave empty to hide the button
-},
-{
+    num: 1,
+    title: "Agency.ai",
+    desc: "A modern AI-powered digital agency platform designed to help businesses build, grow, and transform their digital presence with innovative technology and creative solutions.",
+    tags: ["React.js", "Tailwind CSS", "Motion", "JavaScript"],
+    demo: "https://agency-ai-five-coral.vercel.app/",
+    code: "https://github.com/bipesh369/agency.ai.git", // Add your GitHub URL here, or leave empty to hide the button
+  },
+  {
     num: 2,
     title: "SewaPath",
     desc: "A citizen-focused platform that brings government service information into one place, allowing users to check eligibility, required documents, fees, processing time, and application steps before applying.",
