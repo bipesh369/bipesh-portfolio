@@ -26,7 +26,6 @@ export default function Skills() {
 
       {/* MAIN WRAPPER */}
       <div className="max-w-6xl mx-auto w-full relative z-10 flex flex-col min-h-[80vh]">
-        
         {/* Header */}
         <SectionHeader eyebrow="// 02. skills" title="What I Build With" />
 
@@ -81,7 +80,7 @@ export default function Skills() {
         {/* FOOTER */}
         <div className="mt-auto pt-10 flex items-center justify-center w-full">
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-blue-400/40 dark:via-cyan-400/40 to-transparent" />
-          <span className="px-5 text-xs font-mono tracking-[0.25em] uppercase text-slate-400 dark:text-slate-500 whitespace-nowrap">
+          <span className="px-4 text-[8px] font-mono tracking-[0.18em] uppercase text-slate-400/80 dark:text-slate-500/80 whitespace-nowrap">
             the stack grows with the project
           </span>
           <div className="flex-1 h-px bg-gradient-to-l from-transparent via-blue-400/40 dark:via-cyan-400/40 to-transparent" />
@@ -94,20 +93,41 @@ export default function Skills() {
       {/* Animations */}
       <style jsx>{`
         @keyframes float1 {
-          0%, 100% { transform: translate(0, 0) scale(1); }
-          50% { transform: translate(60px, 40px) scale(1.1); }
+          0%,
+          100% {
+            transform: translate(0, 0) scale(1);
+          }
+          50% {
+            transform: translate(60px, 40px) scale(1.1);
+          }
         }
         @keyframes float2 {
-          0%, 100% { transform: translate(0, 0) scale(1); }
-          50% { transform: translate(-50px, -40px) scale(1.15); }
+          0%,
+          100% {
+            transform: translate(0, 0) scale(1);
+          }
+          50% {
+            transform: translate(-50px, -40px) scale(1.15);
+          }
         }
         @keyframes float3 {
-          0%, 100% { transform: translate(0, 0) scale(1); }
-          50% { transform: translate(40px, -50px) scale(1.05); }
+          0%,
+          100% {
+            transform: translate(0, 0) scale(1);
+          }
+          50% {
+            transform: translate(40px, -50px) scale(1.05);
+          }
         }
-        .animate-float1 { animation: float1 12s ease-in-out infinite; }
-        .animate-float2 { animation: float2 14s ease-in-out infinite; }
-        .animate-float3 { animation: float3 16s ease-in-out infinite; }
+        .animate-float1 {
+          animation: float1 12s ease-in-out infinite;
+        }
+        .animate-float2 {
+          animation: float2 14s ease-in-out infinite;
+        }
+        .animate-float3 {
+          animation: float3 16s ease-in-out infinite;
+        }
       `}</style>
     </section>
   );

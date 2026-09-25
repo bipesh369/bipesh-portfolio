@@ -9,6 +9,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 
+
 // ─── Navigation ──────────────────────────────────────────────
 export const NAV_LINKS = [
   { id: "home", label: "Home", icon: "⌂" },
@@ -75,6 +76,7 @@ export const SKILLS = [
       },
     ],
   },
+
   {
     category: "Frontend Stack",
     items: [
@@ -92,6 +94,51 @@ export const SKILLS = [
       },
     ],
   },
+
+  {
+    category: "Backend Stack",
+    items: [
+      {
+        name: "Node.js",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      },
+      {
+        name: "Express.js",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+      },
+      {
+        name: "MongoDB",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      },
+      {
+        name: "Mongoose",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongoose/mongoose-original.svg",
+      },
+      {
+        name: "JWT",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jsonwebtoken/jsonwebtoken-plain.svg",
+      },
+      {
+        name: "REST API",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      },
+    ],
+  },
+
+  {
+    category: "Deployment",
+    items: [
+      {
+        name: "Vercel",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
+      },
+      {
+        name: "Render",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/render/render-original.svg",
+      },
+    ],
+  },
+
   {
     category: "Tools & Workflow",
     items: [
@@ -106,6 +153,10 @@ export const SKILLS = [
       {
         name: "GitHub",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      },
+      {
+        name: "Postman",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
       },
     ],
   },
